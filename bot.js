@@ -19,7 +19,7 @@ const userSchema = new mongoose.Schema({
 const User = mongoose.model('User', userSchema);
 
 // Telegram Bot setup
-const botToken = '7129991993:AAG-_X8hZv7R89w4aoK1TE2TvC8Ir29xxvs';
+const botToken = 'TELEGRAM_BOT_TOKEN';
 const bot = new TelegramBot(botToken, { polling: true });
 
 // Express setup for serving web app
