@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telegram Bot Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Telegram Bot Game</h1>
+        <div id="game-section">
+            <p id="status">Loading...</p>
+            <div id="buttons">
+                <button onclick="startGame()">Start Game</button>
+                <button onclick="topUp()">Top Up Tokens</button>
+            </div>
+        </div>
+        <div id="game-play" style="display: none;">
+            <p>Choose your move:</p>
+            <button onclick="makeMove('Rock')">Rock</button>
+            <button onclick="makeMove('Paper')">Paper</button>
+            <button onclick="makeMove('Scissors')">Scissors</button>
+        </div>
+        <div id="payment-section" style="display: none;">
+            <p>Click below to make a payment and top up your tokens.</p>
+            <button onclick="goToPayment()">Make Payment</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
